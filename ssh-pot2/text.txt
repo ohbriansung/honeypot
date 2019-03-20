@@ -1,0 +1,100 @@
+  325  cd /etc
+  326  cd cron.d
+  327  ls
+  328  cd ..
+  329  cat crontab
+  330  cat /var/log/syslog | grep cron
+  331  cd
+  332  ls
+  333  nano example2.sh 
+  334  ls
+  335  crontab -e
+  336  nano example2.sh 
+  337  ls -lh
+  338  cat text.txt 
+  339  nano example2.sh 
+  340  ./example2.sh 
+  341  cat text.txt 
+  342  nano example2.sh 
+  343  ./example2.sh 
+  344  cat text.txt 
+  345  ./example2.sh 
+  346  nano example2.sh 
+  347  ./example2.sh 
+  348  nano example2.sh 
+  349  ./example2.sh 
+  350  cat text.txt 
+  351  history
+  352  bash
+  353  nano example2.sh 
+  354  ./example2.sh 
+  355  cat text.txt 
+  356  crontab -e
+  357  cat /etc/crontab
+  358  cat text.txt 
+  359  ./example2.sh 
+  360  cat text.txt 
+  361  crontab -e
+  362  cat /etc/crontab
+  363  crontab -e
+  364  nano example2.sh 
+  365  ./example2.sh &
+  366  wait(2)
+  367  man sleep
+  368  ./example2.sh &
+  369  nano example2.sh 
+  370  ./example2.sh &
+  371  kill -9 2981
+  372  ./example2.sh &
+  373  kill -9 3120
+  374  ssh admin@206.189.215.73
+  375  ls
+  376  cd Documents/
+  377  ls
+  378  git clone https://github.com/ohbriansung/honeypot.git
+  379  ls
+  380  cd honeypot/
+  381  ls
+  382  mkdir ssh-pot2
+  383  ls
+  384  cd
+  385  ls
+  386  nano date.txt
+  387  nano example2.sh
+  388  cd Documents/
+  389  ls
+  390  cd honeypot/
+  391  ls
+  392  cd ssh-pot2
+  393  pwd
+  394  cd
+  395  ls
+  396  cp ./example2.sh /home/pi/Documents/honeypot/ssh-pot2
+  397  cd Documents/
+  398  ls
+  399  cd honeypot/
+  400  ls
+  401  cd ssh-pot2
+  402  ls
+  403  nano example2.sh
+  404  ls
+  405  mv example2.sh logreporter.sh
+  406  ls
+  407  nano logreporter.sh 
+  408  ls
+  409  cd ..
+  410  ls
+  411  nano README.md 
+  412  ls
+  413  nano README.md 
+  414  ls
+  415  cd ssh-pot
+  416  cd ..
+  417  cd ssh-pot2
+  418  ls
+  419  /home/pi/Documents/honeypot/ssh-pot2/logreporter.sh &
+  420  nano logreporter.sh 
+  421  ls
+  422  nano logreporter.sh 
+  423  ls
+  424  ./logreporter.sh &
