@@ -1,0 +1,66 @@
+DEB [20190320-03:22:21.562] thr=1   paramiko.transport: starting thread (server mode): 0xeceddd8
+DEB [20190320-03:22:21.563] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.2
+DEB [20190320-03:22:21.567] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.8
+INF [20190320-03:22:21.568] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.8)
+DEB [20190320-03:22:21.589] thr=1   paramiko.transport: kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'diffie-hellman-group14-sha1', 'ext-info-c'] server key:['ecdsa-sha2-nistp256-cert-v01@openssh.com', 'ecdsa-sha2-nistp384-cert-v01@openssh.com', 'ecdsa-sha2-nistp521-cert-v01@openssh.com', 'ssh-ed25519-cert-v01@openssh.com', 'rsa-sha2-512-cert-v01@openssh.com', 'rsa-sha2-256-cert-v01@openssh.com', 'ssh-rsa-cert-v01@openssh.com', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519', 'rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com', 'zlib'] server compress:['none', 'zlib@openssh.com', 'zlib'] client lang:[''] server lang:[''] kex follows?False
+DEB [20190320-03:22:21.589] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20190320-03:22:21.589] thr=1   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20190320-03:22:21.589] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20190320-03:22:21.589] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20190320-03:22:21.589] thr=1   paramiko.transport: Compression agreed: none
+DEB [20190320-03:22:21.646] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20190320-03:22:24.067] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20190320-03:22:24.204] thr=1   paramiko.transport: Auth request (type=none) service=ssh-connection, username=root
+INF [20190320-03:22:24.204] thr=1   paramiko.transport: Auth rejected (none).
+DEB [20190320-03:22:31.498] thr=1   paramiko.transport: Auth request (type=password) service=ssh-connection, username=root
+INF [20190320-03:22:31.499] thr=1   paramiko.transport: Auth rejected (password).
+DEB [20190320-03:22:33.695] thr=1   paramiko.transport: EOF in transport thread
+DEB [20190320-03:23:03.624] thr=2   paramiko.transport: starting thread (server mode): 0xecfb550
+DEB [20190320-03:23:03.625] thr=2   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.2
+DEB [20190320-03:23:03.629] thr=2   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.8
+INF [20190320-03:23:03.629] thr=2   paramiko.transport: Connected (version 2.0, client OpenSSH_7.8)
+DEB [20190320-03:23:03.647] thr=2   paramiko.transport: kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'diffie-hellman-group14-sha1', 'ext-info-c'] server key:['rsa-sha2-512-cert-v01@openssh.com', 'rsa-sha2-256-cert-v01@openssh.com', 'ssh-rsa-cert-v01@openssh.com', 'rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256-cert-v01@openssh.com', 'ecdsa-sha2-nistp384-cert-v01@openssh.com', 'ecdsa-sha2-nistp521-cert-v01@openssh.com', 'ssh-ed25519-cert-v01@openssh.com', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com', 'zlib'] server compress:['none', 'zlib@openssh.com', 'zlib'] client lang:[''] server lang:[''] kex follows?False
+DEB [20190320-03:23:03.647] thr=2   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20190320-03:23:03.648] thr=2   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20190320-03:23:03.648] thr=2   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20190320-03:23:03.648] thr=2   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20190320-03:23:03.648] thr=2   paramiko.transport: Compression agreed: none
+DEB [20190320-03:23:03.704] thr=2   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20190320-03:23:03.723] thr=2   paramiko.transport: Switch to new keys ...
+DEB [20190320-03:23:03.796] thr=2   paramiko.transport: Auth request (type=none) service=ssh-connection, username=root
+INF [20190320-03:23:03.796] thr=2   paramiko.transport: Auth rejected (none).
+DEB [20190320-03:23:07.642] thr=2   paramiko.transport: Auth request (type=password) service=ssh-connection, username=root
+INF [20190320-03:23:07.643] thr=2   paramiko.transport: Auth rejected (password).
+DEB [20190320-03:23:08.676] thr=2   paramiko.transport: EOF in transport thread
+DEB [20190320-11:44:24.756] thr=3   paramiko.transport: starting thread (server mode): 0x111bb7f0
+DEB [20190320-11:44:24.757] thr=3   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.2
+DEB [20190320-11:44:25.157] thr=3   paramiko.transport: Remote version/idstring: SSH-2.0-sshlib-0.1
+INF [20190320-11:44:25.157] thr=3   paramiko.transport: Connected (version 2.0, client sshlib-0.1)
+DEB [20190320-11:44:25.158] thr=3   paramiko.transport: kex algos:['diffie-hellman-group1-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-dss', 'ssh-rsa'] client encrypt:['aes128-cbc', 'aes128-ctr'] server encrypt:['aes128-cbc', 'aes128-ctr'] client mac:['hmac-md5', 'hmac-sha1'] server mac:['hmac-md5', 'hmac-sha1'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+DEB [20190320-11:44:25.158] thr=3   paramiko.transport: Kex agreed: diffie-hellman-group1-sha1
+DEB [20190320-11:44:25.158] thr=3   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20190320-11:44:25.158] thr=3   paramiko.transport: Cipher agreed: aes128-cbc
+DEB [20190320-11:44:25.158] thr=3   paramiko.transport: MAC agreed: hmac-md5
+DEB [20190320-11:44:25.158] thr=3   paramiko.transport: Compression agreed: none
+DEB [20190320-11:44:25.367] thr=3   paramiko.transport: kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+DEB [20190320-11:44:25.803] thr=3   paramiko.transport: Switch to new keys ...
+DEB [20190320-11:44:26.246] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:26.246] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:26.447] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:26.447] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:26.649] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:26.649] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:26.851] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:26.851] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:27.052] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:27.052] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:27.253] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:27.253] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:27.455] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:27.455] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:27.656] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:27.656] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:27.857] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:27.857] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-11:44:28.059] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
+INF [20190320-11:44:28.059] thr=3   paramiko.transport: Auth rejected (password).

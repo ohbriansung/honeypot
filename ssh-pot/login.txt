@@ -1,0 +1,12 @@
+root:0000
+root:toor
+admin:admin1234
+admin:default
+admin:1234
+admin:aerohive
+admin:admin123
+admin:admin1234
+admin:default
+admin:admin
+admin:7ujMko0admin
+admin:pfsense
