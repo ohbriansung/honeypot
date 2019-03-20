@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Reusable Form Demo</title>
-       <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
-       <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+       <link rel="stylesheet" media="screen" href ="/static/bootstrap.min.css">
+       <link rel="stylesheet" href="/static/bootstrap-theme.min.css">
        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
  
     </head>
@@ -21,20 +21,11 @@
               <label for="email">Email:</label>
               <input type="text" class="form-control" id="email" name="email" placeholder="Your email will be used to contact you.">
               <br>
-              <input type="hidden" id="hidden" value="">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="">
 
             </div>
             <button type="submit" class="btn btn-success" id="sbut">Sign Up</button>
           </form>
-
-        {#<script>#}
-        {#    function validateHidden(){#}
-        {#        var x = document.getElementById("hidden").value#}
-        {#        if(x!==""){#}
-        {##}
-        {#        }#}
-        {#    }#}
-        {#</script>#}
 
           <br>
                 {% with messages = get_flashed_messages(with_categories=true) %}
