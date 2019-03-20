@@ -64,3 +64,24 @@ DEB [20190320-11:44:27.857] thr=3   paramiko.transport: Auth request (type=passw
 INF [20190320-11:44:27.857] thr=3   paramiko.transport: Auth rejected (password).
 DEB [20190320-11:44:28.059] thr=3   paramiko.transport: Auth request (type=password) service=ssh-connection, username=admin
 INF [20190320-11:44:28.059] thr=3   paramiko.transport: Auth rejected (password).
+DEB [20190320-19:13:31.493] thr=1   paramiko.transport: starting thread (server mode): 0xbaa655f8
+DEB [20190320-19:13:31.493] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.2
+ERR [20190320-19:13:41.491] thr=1   paramiko.transport: Exception: Error reading SSH protocol banner
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport: Traceback (most recent call last):
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2138, in _check_banner
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport:     buf = self.packetizer.readline(timeout)
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 367, in readline
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport:     buf += self._read_timeout(timeout)
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 563, in _read_timeout
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport:     raise EOFError()
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport: EOFError
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport: 
+ERR [20190320-19:13:41.496] thr=1   paramiko.transport: During handling of the above exception, another exception occurred:
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport: 
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport: Traceback (most recent call last):
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 1966, in run
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport:     self._check_banner()
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2143, in _check_banner
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport:     "Error reading SSH protocol banner" + str(e)
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport: paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+ERR [20190320-19:13:41.497] thr=1   paramiko.transport: 
