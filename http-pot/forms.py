@@ -11,7 +11,8 @@ app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 class ReusableForm(Form):
     name = TextField('Name:', validators=[validators.required()])
-    email = TextField('Email:', validators=[validators.required(), validators.Length(min=6, max=35)])
+    email = TextField('Email:', validators=[validators.required()])
+    hidden = TextField('Hidden:')
     # password = TextField('Password:', validators=[validators.required(), validators.Length(min=3, max=35)])
 
 
