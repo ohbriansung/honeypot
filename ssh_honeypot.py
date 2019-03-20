@@ -5,7 +5,7 @@ import paramiko
 
 from _thread import start_new_thread
 
-KEY = paramiko.RSAKey(filename='~/.ssh/server.key')
+KEY = paramiko.RSAKey(filename='server.key')
 PORT = 2222
 LOGFILE = 'login.txt'
 LOGFILE_LOCK = threading.Lock()
