@@ -19,12 +19,12 @@ class ReusableForm(Form):
 def hello():
     form = ReusableForm(request.form)
 
-    print form.errors
+    print(form.errors)
     if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
         hidden = request.form['hidden']
-        print name, " ", email, " ", hidden
+        print (name, " ", email, " ", hidden)
 
         if form.validate():
             # Save the comment here.
