@@ -85,3 +85,49 @@ ERR [20190320-19:13:41.497] thr=1   paramiko.transport:   File "/usr/local/lib/p
 ERR [20190320-19:13:41.497] thr=1   paramiko.transport:     "Error reading SSH protocol banner" + str(e)
 ERR [20190320-19:13:41.497] thr=1   paramiko.transport: paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
 ERR [20190320-19:13:41.497] thr=1   paramiko.transport: 
+DEB [20190321-05:49:21.805] thr=2   paramiko.transport: starting thread (server mode): 0xb9a48a20
+DEB [20190321-05:49:21.805] thr=2   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.2
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: GET /mahua/v/20190212/8dfcb2192a5052e5a152b9d8115201af_24f3fa0cbc00474fab1610181191b09c_0.m3u8 HTTP/1.1
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Host: 206.189.215.73:2222
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: ache-Control: max-age=0
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Upgrade-Insecure-Requests: 1
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Accept-Encoding: gzip, deflate
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,fr;q=0.7
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Cookie: __cfduid=df196e929b0113f0ecbe95f35e04588001551851468
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: Connection: close
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: 
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: 
+DEB [20190321-05:49:21.806] thr=2   paramiko.transport: Banner: 
+ERR [20190321-05:49:21.975] thr=2   paramiko.transport: Exception: Error reading SSH protocol banner
+ERR [20190321-05:49:21.975] thr=2   paramiko.transport: Traceback (most recent call last):
+ERR [20190321-05:49:21.975] thr=2   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2138, in _check_banner
+ERR [20190321-05:49:21.975] thr=2   paramiko.transport:     buf = self.packetizer.readline(timeout)
+ERR [20190321-05:49:21.975] thr=2   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 367, in readline
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:     buf += self._read_timeout(timeout)
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 563, in _read_timeout
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:     raise EOFError()
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: EOFError
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: 
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: During handling of the above exception, another exception occurred:
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: 
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: Traceback (most recent call last):
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 1966, in run
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:     self._check_banner()
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:   File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2143, in _check_banner
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport:     "Error reading SSH protocol banner" + str(e)
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+ERR [20190321-05:49:21.976] thr=2   paramiko.transport: 
+DEB [20190321-05:49:22.885] thr=3   paramiko.transport: starting thread (server mode): 0xbdbd2780
+DEB [20190321-05:49:22.885] thr=3   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.2
+DEB [20190321-05:49:22.885] thr=3   paramiko.transport: Remote version/idstring: SSH-2.0-libssh2_1.4.3
+INF [20190321-05:49:22.885] thr=3   paramiko.transport: Connected (version 2.0, client libssh2_1.4.3)
+DEB [20190321-05:49:23.114] thr=3   paramiko.transport: kex algos:['diffie-hellman-group1-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['ssh-ed25519', 'ecdsa-sha2-nistp521', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp256', 'ssh-dss', 'ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'blowfish-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'blowfish-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-md5', 'hmac-sha1', 'hmac-ripemd160'] server mac:['hmac-md5', 'hmac-sha1', 'hmac-ripemd160'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+DEB [20190321-05:49:23.115] thr=3   paramiko.transport: Kex agreed: diffie-hellman-group1-sha1
+DEB [20190321-05:49:23.115] thr=3   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20190321-05:49:23.115] thr=3   paramiko.transport: Cipher agreed: aes128-cbc
+DEB [20190321-05:49:23.115] thr=3   paramiko.transport: MAC agreed: hmac-md5
+DEB [20190321-05:49:23.115] thr=3   paramiko.transport: Compression agreed: none
+DEB [20190321-05:49:23.402] thr=3   paramiko.transport: kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+DEB [20190321-05:49:41.656] thr=3   paramiko.transport: EOF in transport thread
