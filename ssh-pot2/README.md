@@ -1,11 +1,37 @@
 # SSH-POT
 
-Created an user with username "admin" and passsword "admin". Disabled its sudo privileges. Waited for a bot or a hacker to break-in and acquired the behavior and operation log.
+On one of our server on Digital Ocean, we created an user with username "admin" and passsword "admin" and disabled its sudo privileges. We waited for a bot or a hacker to break-in and acquired the behavior and operation log.
 
-## Authors
+We've also setup another ssh-pot on port 2222 which allows people to attempt logins. Instead of actually login to the server, the attempts will be logged into [login.txt](https://github.com/ohbriansung/honeypot/blob/master/ssh-pot/login.txt). This fake ssh pot was written in Python3.
 
-1. Brian Sung
-2. Omar Sharif
+![Honeypot](https://raw.githubusercontent.com/ohbriansung/honeypot/master/ssh-pot2/honeypot.jpg)
+
+## Attempted Passwords
+
+```
+...
+admin:admin1234
+admin:default
+admin:1234
+admin:aerohive
+admin:admin123
+admin:admin1234
+admin:default
+admin:admin
+admin:7ujMko0admin
+admin:pfsense
+admin:default
+admin:1234
+admin:admin
+admin:admin
+admin:12345
+admin:admin
+admin:admin1
+admin:1234
+admin:password
+admin:7ujMko0admin
+...
+```
 
 ## How To Use
 
@@ -23,7 +49,7 @@ sudo apt-get -y install ssmtp mailutils mpack
 # UseSTARTTLS=YES
 sudo nano /etc/ssmtp.conf
 
-# Send a file: 
+# Send a file:
 mpack -s "Subject" /home/pi/file.txt account@domain.com
 
 # Run the script logrecorder.sh in backgound
@@ -115,26 +141,36 @@ echo "FIN"
 etc.
 ```
 
-![screenshot](screenshot.png)
+![screenshot](https://raw.githubusercontent.com/ohbriansung/honeypot/master/ssh-pot2/screenshot.png)
 
 ## Mirai
 
-An ELF backdoor Trojan. **Future** is the meaning of the name in Japaness.
+An ELF backdoor Trojan. *Future* is the meaning of the name in Japanese.
 
-* **Symptoms**: Causes massive DDoS attacks, outage of popular websites, disables the Internet for thousands of people.
-* **Targets**: IoT devices, IP cameras, Raspberry pi, Linux machines with BusyBox binary with default username and password setups.
+* Symptoms: Causes massive DDoS attacks, outage of popular websites, disables the Internet for thousands of people.
+* Targets: IoT devices, IP cameras, Raspberry pi, Linux machines with BusyBox binary with default username and password setups.
 
-* **Behaviors**:
+* Behaviors:
 
     1. Brute-force attack to scan through network and try logins.
     2. Replicate and wait for further command.
 
 * [Source Code](https://github.com/jgamblin/Mirai-Source-Code)
 
+## Authors
+
+0. Brian Sung
+1. Omar Sharif
+
+## Acknowledgement
+
+This project is for academic purposes only.
+
 ## References
 
-1. [Similar attack](https://twitter.com/mleaustin/status/1082069872652226560?s=09)
-2. [Mirai Linux backdoor](https://bestsecuritysearch.com/mirai-linux-backdoor-attacks-iot-devices/)
-3. [ELF remote backdoor](http://blog.malwaremustdie.org/2016/02/mmd-0051-2016-debungking-tiny-elf.html)
-4. [Similar attack in China](https://www.cnblogs.com/liuquan/p/6339820.html)
-5. [Remove Mirai](https://www.2-spyware.com/remove-mirai-virus.html)
+0. [Similar attack](https://twitter.com/mleaustin/status/1082069872652226560?s=09)
+1. [Mirai Linux backdoor](https://bestsecuritysearch.com/mirai-linux-backdoor-attacks-iot-devices/)
+1. [ELF remote backdoor](http://blog.malwaremustdie.org/2016/02/mmd-0051-2016-debungking-tiny-elf.html)
+1. [Similar attack in China](https://www.cnblogs.com/liuquan/p/6339820.html)
+1. [Remove Mirai](https://www.2-spyware.com/remove-mirai-virus.html)
+1. [Honeypot Image](https://upload.wikimedia.org/wikipedia/commons/a/aa/Closeup_on_honeypot_ants_%28Myrmecocystus_mimicus%29_at_Oakland_Zoo.jpg)
