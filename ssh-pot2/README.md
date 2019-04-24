@@ -1,6 +1,6 @@
 # SSH-POT
 
-On one of our server on Digital Ocean, we created an user with username "admin" and passsword "admin" and disabled its sudo privileges. We waited for a bot or a hacker to break-in and acquired the behavior and operation log.
+On one of our servers on Digital Ocean, we created an user with username "admin", passsword "admin", and disabled its sudo privileges. We waited for a bot or a hacker to break-in, then acquired the behavior and operation log.
 
 We've also setup another ssh-pot on port 2222 which allows people to attempt logins. Instead of actually login to the server, the attempts will be logged into [login.txt](https://github.com/ohbriansung/honeypot/blob/master/ssh-pot/login.txt). This fake ssh pot was written in Python3.
 
